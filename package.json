@@ -1,37 +1,51 @@
 {
-  "author": "Michael Hueter <mthueter@gmail.com>",
-  "version": "2.0.0",
-  "name": "docker-node-express-boilerplate",
-  "description": "Boilerplate Dockerized Express code to launch new RESTful APIs.",
-  "repository": {
-    "type": "git",
-    "url": "git@github.com:mhueter/docker-node-express-boilerplate.git"
+  "name": "express-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.6.0",
+    "npm": ">=2.15.9",
+    "yarn": ">=0.17.9"
   },
-  "main": "app/app.js",
   "scripts": {
-    "test": "jest"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
+  "keywords": [
+    "express",
+    "node",
+    "mongodb",
+    "mongoose",
+    "es6",
+    "REST",
+    "API",
+    "boilerplate"
+  ],
+  "author": "Emilio <emilioriosvz@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "bluebird": "3.5.3",
-    "body-parser": "1.18.3",
-    "dotenv": "6.1.0",
-    "express": "4.16.4",
-    "jsonschema": "1.2.4",
-    "mongoose": "5.3.12"
+    "bcryptjs": "^2.4.0",
+    "bluebird": "^3.4.7",
+    "body-parser": "^1.15.2",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.1",
+    "eslint": "^3.13.1",
+    "express": "^4.9.5",
+    "express-session": "^1.14.1",
+    "express-validation": "^1.0.1",
+    "helmet": "^3.3.0",
+    "joi": "^10.1.0",
+    "jsonwebtoken": "^7.2.1",
+    "mongoose": "^4.7.6",
+    "morgan": "^1.7.0",
+    "multer": "^1.2.0",
+    "request": "^2.75.0"
   },
   "devDependencies": {
-    "babel-eslint": "^10.0.1",
-    "babel-preset-es2017": "^6.24.1",
-    "eslint": "^5.9.0",
-    "jest": "^23.6.0",
-    "jest-environment-node": "^23.4.0",
-    "mongodb-memory-server": "^2.7.2",
-    "supertest": "^3.3.0"
-  },
-  "jest": {
-    "globalSetup": "./config/jest/setup.js",
-    "globalTeardown": "./config/jest/teardown.js",
-    "testEnvironment": "./config/jest/MongoEnvironment.js"
+    "eslint": "^3.13.1",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.4.0",
+    "eslint-plugin-standard": "^2.0.1"
   }
 }
